@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <style>
+          body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing:border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  box-sizing:border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+    width: 100%;
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+  
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-size:cover;
+  width: 500px;
+  margin-left:33%;
+
+}
+.container h3{
+  background-color: #fcfcfc;
+    color: blue;
+    font-size: 26px;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    border: 2px dotted blue;
+}
+
+       </style> 
+    </head>
+    <body>
+        <div class="container">
+
+       <form action="quadratic.php" METHOD="POST">
+           <h3>QUADRATIC EQUATION SOLVER</h3>
+           <input type="text" name="A" placeholder="enter a value for a">
+           <br/>
+           <br/>
+           <input type="text" name="B"  placeholder="enter a value for b">
+           <br/>
+           <br/>
+           <input type="text" name="C"  placeholder="enter a value for c">
+           <br/>
+           <br/>
+           <input name="submit"  type="submit" value="submit" >
+       </form>
+    </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

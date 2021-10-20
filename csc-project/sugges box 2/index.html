@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery.js">
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+      $("#feedback_button").click(function(){
+        form();
+      });
+    });
+        
+    function form()
+    {
+      $("form").slideToggle();
+    }
+    </script>
+
+</head>
+
+<body>
+
+  <h1>SUGGESTION BOX</h1>
+
+  <div id="form">
+    <p id="feedback_button">Feedback</p>
+    
+	<form method="post" action="">
+      <input type="text" id="name" placeholder="Name">
+      <br>
+      <input type="text" id="email" placeholder="Email">
+      <br>
+      <textarea id="feedback" placeholder="Feedback"></textarea>
+      <br>
+      <input type="submit" id="submit_feedback" values="Submit">
+    </form>
+  </div>
+</body>
+</html>
